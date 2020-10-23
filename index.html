@@ -1,1 +1,62 @@
-<h1 id="title">tell me about music</h1>
+<html lang="en">
+  <head>
+
+    <style>
+
+      body {
+        background: url(images/form-background.png);
+        font-family: sans-serif;
+
+      }
+
+      label {
+        font-size: 20px;
+        display: block;
+        padding-bottom: 10px;
+      }
+
+      input {
+        display: block;
+      }
+
+      form{
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="title">tell me about music</h1>
+    <p id="description">This is a survey where you can tell us about the music you're inspired by.</p>
+    <form id="survey-form">
+      <label id="name-label">Name:</label>
+      <input type="text" name="name" id="name" required placeholder="Name"><br>
+      <label id="email-label">Email:</label>
+      <input type="email" name="email" id="email" required placeholder="Email"><br>
+      <label id="number-label">Number:</label>
+      <input type="number" name="number" id="number" min="0" max="10" required placeholder="$"><br>
+
+
+      <select id="dropdown" name="guitars">
+        <option value="fender">Fender</option>
+        <option value="martin">Martin</option>
+        <option value="epiphone">Epiphone</option>
+        <option value="other">Other</option>
+       </select>
+
+       <br>
+       <input type="radio" name="gender" value="male"> Male<br>
+       <input type="radio" name="gender" value="female"> Female<br>
+       <input type="radio" name="gender" value="other"> Other
+       <br>
+
+       <input type="checkbox" name="vehicle1" value="bike"> I have a bike<br>
+       <input type="checkbox" name="vehicle2" value="car"> I have a car<br>
+       <input type="checkbox" name="vehicle3" value="boat"> I have a boat<br>
+
+       <textarea placeholder="additional comments"></textarea>
+       <input type="submit" id="submit">
+    </form>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
